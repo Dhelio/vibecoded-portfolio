@@ -158,23 +158,57 @@ function updateContent() {
 
         if (project.media && project.media.length > 0) {
             media.classList.add('has-gallery');
-            const galleryContainer = document.createElement('div');
-            galleryContainer.className = 'gallery-container';
 
-            project.media.forEach(item => {
-                const itemDiv = document.createElement('div');
-                itemDiv.className = 'gallery-item';
+            // Main Display
+            const mainDisplay = document.createElement('div');
+            mainDisplay.className = 'gallery-main-display';
+
+            // Function to update main display
+            const updateMainDisplay = (item) => {
+                mainDisplay.innerHTML = '';
+                if (item.type === 'video') {
+                    let src = item.src.replace('youtube.com', 'youtube-nocookie.com');
+                    mainDisplay.innerHTML = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+                } else {
+                    mainDisplay.innerHTML = `<img src="${item.src}" alt="${project.title}">`;
+                }
+            };
+
+            // Initialize with first item
+            updateMainDisplay(project.media[0]);
+
+            // Thumbnails Container
+            const thumbnailsContainer = document.createElement('div');
+            thumbnailsContainer.className = 'gallery-thumbnails';
+
+            project.media.forEach((item, index) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'gallery-thumbnail';
+                if (index === 0) thumb.classList.add('active');
 
                 if (item.type === 'video') {
-                    // Convert standard YouTube URL to embed URL if needed, and use nocookie domain
-                    let src = item.src.replace('youtube.com', 'youtube-nocookie.com');
-                    itemDiv.innerHTML = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+                    // Extract video ID for thumbnail
+                    const videoId = item.src.split('/').pop().split('?')[0];
+                    thumb.innerHTML = `<img src="https://img.youtube.com/vi/${videoId}/default.jpg" alt="Video">`;
+                    const playIcon = document.createElement('i');
+                    playIcon.className = 'fas fa-play-circle';
+                    thumb.appendChild(playIcon);
                 } else {
-                    itemDiv.innerHTML = `<img src="${item.src}" alt="${project.title}">`;
+                    thumb.innerHTML = `<img src="${item.src}" alt="Thumbnail">`;
                 }
-                galleryContainer.appendChild(itemDiv);
+
+                thumb.addEventListener('click', () => {
+                    updateMainDisplay(item);
+                    // Update active state
+                    thumbnailsContainer.querySelectorAll('.gallery-thumbnail').forEach(t => t.classList.remove('active'));
+                    thumb.classList.add('active');
+                });
+
+                thumbnailsContainer.appendChild(thumb);
             });
-            media.appendChild(galleryContainer);
+
+            media.appendChild(mainDisplay);
+            media.appendChild(thumbnailsContainer);
         } else {
             media.innerHTML = '<i class="fas fa-image fa-3x"></i>'; // Placeholder icon
         }
