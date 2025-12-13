@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Brancaccio | VR/AR Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="navbar">
+        <div class="logo">AB</div>
+        <div class="nav-links">
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#projects" data-i18n="nav_projects">Projects</a>
+            <a href="#skills" data-i18n="nav_skills">Skills</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="lang-switch">
+            <button id="lang-en" class="active">EN</button>
+            <button id="lang-it">IT</button>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-background">
+            <iframe
+                src="https://www.youtube.com/embed/UQgw9KjAH3c?autoplay=1&mute=1&loop=1&playlist=UQgw9KjAH3c&controls=0&showinfo=0&rel=0&enablejsapi=1&iv_load_policy=3"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="profile-photo-container">
+                <img src="_assets/my_photo.jpg" alt="Alessandro Brancaccio" class="profile-photo">
+            </div>
+            <h1 id="hero-name">Alessandro Brancaccio</h1>
+            <h2 id="hero-role" data-i18n="hero_role">VR Developer specialized in Unity</h2>
+            <p id="hero-desc" data-i18n="hero_desc">7+ years experience across multiple sectors (amusement, industrial,
+                research, educational, experiential).</p>
+            <a href="#projects" class="cta-button" data-i18n="hero_cta">View Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about_text">Proactive and passionate about videogames and interactive development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Highlighted Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-unity"></i>
+                    <h3 data-i18n="skill_unity">Complex VR/AR development in Unity</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3 data-i18n="skill_networking">Multiplayer networking</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-i18n="skill_crossplatform">Cross-platform deployment</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3 data-i18n="skill_ai">AI integration and immersive interaction design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 data-i18n="contact_title">Get In Touch</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +39 348 004 6749</p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:ale.brancaccio@libero.it">ale.brancaccio@libero.it</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/alessandro-brancaccio-146747120/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:ale.brancaccio@libero.it"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Alessandro Brancaccio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
