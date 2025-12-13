@@ -258,7 +258,6 @@ body {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* Increased min-width for better readability */
     gap: 2rem;
 }
 
@@ -268,6 +267,160 @@ body {
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-media {
+    width: 100%;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.project-media.has-gallery {
+    height: auto;
+    display: flex;
+}
+
+.gallery-main-display {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-main-display img,
+.gallery-main-display iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+    background: #1a1a1a;
+    width: 100%;
+    scrollbar-width: thin;
+    height: 80px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar {
+    height: 6px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.gallery-thumbnail {
+    width: 100px;
+    height: 60px;
+    flex-shrink: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-thumbnail:hover,
+.gallery-thumbnail.active {
+    opacity: 1;
+    border-color: var(--accent-color);
+}
+
+.gallery-thumbnail i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lightbox-close:hover {
+    color: var(--accent-color);
+}
+
+.project-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
 .project-info .subtitle {
@@ -295,7 +448,6 @@ body {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
     white-space: pre-line;
-    /* Preserves newlines */
 }
 
 .project-details ul {
@@ -311,7 +463,6 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: auto;
-    /* Push to bottom */
 }
 
 .tag {
@@ -403,7 +554,6 @@ body {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* Mobile menu implementation needed if requested, simple hide for now */
     }
 
     .hamburger {

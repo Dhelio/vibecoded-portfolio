@@ -169,8 +169,14 @@ function updateContent() {
                 if (item.type === 'video') {
                     let src = item.src.replace('youtube.com', 'youtube-nocookie.com');
                     mainDisplay.innerHTML = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+                    mainDisplay.onclick = null; // Remove click handler for video
                 } else {
                     mainDisplay.innerHTML = `<img src="${item.src}" alt="${project.title}">`;
+                    // Add click handler for lightbox
+                    mainDisplay.onclick = () => {
+                        lightboxImg.src = item.src;
+                        lightbox.classList.add('active');
+                    };
                 }
             };
 
@@ -264,6 +270,28 @@ function updateContent() {
     document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
     document.getElementById('lang-it').classList.toggle('active', currentLang === 'it');
 }
+
+// Lightbox Logic
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+lightbox.innerHTML = `
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" src="" alt="Full View">
+`;
+document.body.appendChild(lightbox);
+
+const lightboxImg = lightbox.querySelector('.lightbox-content');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+lightboxClose.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+    }
+});
 
 document.getElementById('lang-en').addEventListener('click', () => {
     currentLang = 'en';
