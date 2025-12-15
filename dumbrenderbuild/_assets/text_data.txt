@@ -1,0 +1,31 @@
+Castello Ursino AR
+Cosa è questo progetto?
+Questo è un progetto sviluppato in collaborazione con Epic Cube per il Castello Ursino di Catania.
+
+Castello Ursino AR si propone d'essere una esperienza XR per i visitatori, aiutando gli utenti ad usufruire meglio della mostra museale tramite dei minigiochi personalizzati per ciascuno dei quadri più importanti della mostra.
+
+Ho personalmente collaborato alla stesura dello storyboard, l'ideazione e l'implementazione dei minigiochi, realizzazione della UI utente a partire dai mockup degli artisti grafici, testing e bugfixing. Tra le feature:
+* Supporto mobile (Android & iOS)
+* Un assistente AI addestrato sui dati relativi ai quadri del museo, a cui è possibile chiedere informazioni in linguaggio naturale circa la storia dei quadri, del museo e dei relativi contesti.
+* Diversi minigiochi che utilizzano scansioni che abbiamo fatto ai quadri del museo
+
+Cosa dimostra questo progetto?
+Dimostra che so lavorare in un team multidisciplinare, contribuendo attivamente a diversi aspetti del ciclo di sviluppo; dai mockup all'implementazione, dallo storyboarding alla prototipazione, fino all'approvazione finale da parte del cliente.
+
+----------------
+
+hOLDer
+Cosa è questo progetto?
+è una applicazione sviluppata in collaborazione con Epic Cube per il trattamento delle disabilità cognitive, specie negli anziani.
+
+L'applicazione contiene diversi minigiochi ideati assieme ad un team di psicologi per il trattamento di diversi tipi di abilità cognitive: dagli esercizi di memoria, allo spelling, al riconoscimento di pattern e di parole, esercizi di associazione e molto altro. Ho personalmento sviluppato diversi minigiochi di questo progetto, tutti soggetti ad un planning e storyboarding molto preciso e con comportamento atteso dell'applicazione (e.g. nessuna animazione delle scritte per non sviare pazienti affetti da ADHD, etc). Tra le features:
+* Supporto mobile (Android & iOS)
+* Diversi minigiochi, disponibili a rotazione o a seconda della licenza, per il trattamento di diversi tipi di abilità.
+* Sistema di gestione dell'amministratore (caretaker) e del paziente.
+* Sistema di gestione della difficoltà dell'esercizio basato sulle capacità reali del paziente
+* Disponibile su [PlayStore](https://play.google.com/store/apps/details?id=com.tamlabsrl.holder&hl=it) ed [Appstore](https://apps.apple.com/us/app/holder/id6473626451)
+
+Cosa dimostra questo progetto?
+Dimostra che so lavorare per task efficientemente, rispettando restrizioni o limitazioni imposte dai requisiti.
+
+----------------

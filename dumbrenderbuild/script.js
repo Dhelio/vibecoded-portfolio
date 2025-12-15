@@ -18,6 +18,8 @@ const translations = {
         contact_title: "Get In Touch",
         lbl_what_is: "What is this project?",
         lbl_what_demo: "What does this project demonstrate?",
+        other_projects_title: "Other Projects",
+        other_projects_desc: "I have worked on a lot of projects through the years: from games to VR simulations, from educational games to industrial applications. Here's a small sample of other things I've worked on.",
         projects: [
             {
                 title: "Fincons Metaverse",
@@ -45,9 +47,29 @@ const translations = {
             {
                 title: "Castello Ursino AR",
                 subtitle: "AR gamified museum visit (PNRR funded)",
-                what_is: "This is a PNRR funded project developed in collaboration with Epic Cube.\n\nIt was developed in partnership with the University of Catania, and the project consisted in the gamification of a museum visit to the Ursino Castle in Catania. I contributed to the storyboarding, architecturing and development of the project, working with a team of graphic designers, modelers and programmers.\n\nIt features:\n• Mobile support (Android & iOS)\n• An AR AI assistant that can explain the paintings and history of the museum and its artworks.\n• Several games made in the context of the most famous paintings in the exhibit.",
-                what_demonstrates: "This project demonstrates that I can work in a multidisciplinary team, contributing ideas and efficiently clearing tasks, as well as assigning roles and contributing to the general documentation of the project",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
+                what_is: "This is a PNRR funded project developed in collaboration with Epic Cube for the Castello Ursino in Catania.\n\nCastello Ursino AR is meant to be an XR experience for visitors, helping users to better enjoy the museum exhibit through custom minigames for each of the most important paintings in the exhibition.\n\nI personally collaborated on the storyboard drafting, the ideation and implementation of the minigames, user UI realization starting from graphic artists' mockups, testing and bugfixing. Features include:\n• Mobile support (Android & iOS)\n• An AI assistant trained on data related to the museum's paintings, which can be asked for information in natural language about the history of the paintings, the museum and related contexts.\n• Several minigames using scans we made of the museum's paintings",
+                what_demonstrates: "It demonstrates that I can work in a multidisciplinary team, actively contributing to various aspects of the development cycle; from mockups to implementation, from storyboarding to prototyping, up to final approval by the client.",
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
+                media: [
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/8kJB4s4xOj4' }, // Updated with ID from youtube_link.txt
+                    { type: 'image', src: '_assets/photogallery/1.png' },
+                    { type: 'image', src: '_assets/photogallery/2.png' },
+                    { type: 'image', src: '_assets/photogallery/3.png' },
+                    { type: 'image', src: '_assets/photogallery/4.png' }
+                ]
+            },
+            {
+                title: "hOLDer",
+                subtitle: "Cognitive disability treatment application",
+                what_is: "hOLDer is an application developed in collaboration with Epic Cube for the treatment of cognitive disabilities, especially in the elderly.\n\nThe application contains several minigames designed together with a team of psychologists for the treatment of different types of cognitive abilities: from memory exercises, to spelling, pattern and word recognition, association exercises and much more. I personally developed several minigames for this project, all subject to very precise planning and storyboarding and expected application behavior (e.g. no text animation to not distract patients with ADHD, etc). Features include:\n• Mobile support (Android & iOS)\n• Several minigames, available in rotation or depending on the license, for the treatment of different types of skills.\n• Administrator (caretaker) and patient management system.\n• Exercise difficulty management system based on the patient's real capabilities\n• Available on PlayStore and Appstore",
+                what_demonstrates: "It demonstrates that I can work efficiently by task, respecting restrictions or limitations imposed by requirements.",
+                tags: ["Mobile", "Serious Game", "Healthcare", "Accessibility"],
+                media: [
+                    { type: 'image', src: '_assets/holder/1.png' },
+                    { type: 'image', src: '_assets/holder/2.png' },
+                    { type: 'image', src: '_assets/holder/3.png' },
+                    { type: 'image', src: '_assets/holder/4.png' }
+                ]
             },
             {
                 title: "EGP – Sicurezza in Cantiere",
@@ -84,6 +106,8 @@ const translations = {
         contact_title: "Contattami",
         lbl_what_is: "Cos'è questo progetto?",
         lbl_what_demo: "Cosa dimostra questo progetto?",
+        other_projects_title: "Altri Progetti",
+        other_projects_desc: "Ho lavorato su molti progetti nel corso degli anni: dai giochi alle simulazioni VR, dai giochi educativi alle applicazioni industriali. Ecco un piccolo esempio di altre cose su cui ho lavorato.",
         projects: [
             {
                 title: "Fincons Metaverse",
@@ -92,7 +116,7 @@ const translations = {
                 what_demonstrates: "Dimostra che posso lavorare su progetti complessi, coprendo un'ampia gamma di funzionalità: dall'architettura della soluzione, alla scrittura degli script client-server, dal lavoro sugli shader alla modellazione 3D, il tutto tenendo conto delle limitazioni specifiche della piattaforma in termini di prestazioni e interattività.",
                 tags: ["Unity", "Multiplayer", "VR", "AI", "Netcode", "Physics"],
                 media: [
-                    { type: 'video', src: 'https://www.youtube.com/embed/N-pNHmufCpk' },
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/N-pNHmufCpk' },
                     { type: 'image', src: '_assets/metaverse/Animazione.gif' },
                     { type: 'image', src: '_assets/metaverse/hub.png' },
                     { type: 'image', src: '_assets/metaverse/lab.png' },
@@ -111,9 +135,29 @@ const translations = {
             {
                 title: "Castello Ursino AR",
                 subtitle: "Visita museale gamificata in AR (finanziata PNRR)",
-                what_is: "Questo è un progetto finanziato dal PNRR sviluppato in collaborazione con Epic Cube.\n\nÈ stato sviluppato in partnership con l'Università di Catania, e il progetto consisteva nella gamification di una visita museale al Castello Ursino di Catania. Ho contribuito allo storyboarding, all'architettura e allo sviluppo del progetto, lavorando con un team di graphic designer, modellatori e programmatori.\n\nInclude:\n• Supporto mobile (Android & iOS)\n• Un assistente AI in AR che può spiegare i dipinti e la storia del museo e delle sue opere.\n• Diversi giochi realizzati nel contesto dei dipinti più famosi della mostra.",
-                what_demonstrates: "Questo progetto dimostra che posso lavorare in un team multidisciplinare, contribuendo con idee ed evadendo efficientemente i task, oltre ad assegnare ruoli e contribuire alla documentazione generale del progetto",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
+                what_is: "Questo è un progetto sviluppato in collaborazione con Epic Cube per il Castello Ursino di Catania.\n\nCastello Ursino AR si propone d'essere una esperienza XR per i visitatori, aiutando gli utenti ad usufruire meglio della mostra museale tramite dei minigiochi personalizzati per ciascuno dei quadri più importanti della mostra.\n\nHo personalmente collaborato alla stesura dello storyboard, l'ideazione e l'implementazione dei minigiochi, realizzazione della UI utente a partire dai mockup degli artisti grafici, testing e bugfixing. Tra le feature:\n• Supporto mobile (Android & iOS)\n• Un assistente AI addestrato sui dati relativi ai quadri del museo, a cui è possibile chiedere informazioni in linguaggio naturale circa la storia dei quadri, del museo e dei relativi contesti.\n• Diversi minigiochi che utilizzano scansioni che abbiamo fatto ai quadri del museo",
+                what_demonstrates: "Dimostra che so lavorare in un team multidisciplinare, contribuendo attivamente a diversi aspetti del ciclo di sviluppo; dai mockup all'implementazione, dallo storyboarding alla prototipazione, fino all'approvazione finale da parte del cliente.",
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
+                media: [
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/8kJB4s4xOj4' },
+                    { type: 'image', src: '_assets/photogallery/1.png' },
+                    { type: 'image', src: '_assets/photogallery/2.png' },
+                    { type: 'image', src: '_assets/photogallery/3.png' },
+                    { type: 'image', src: '_assets/photogallery/4.png' }
+                ]
+            },
+            {
+                title: "hOLDer",
+                subtitle: "Applicazione di trattamento disabilità cognitive",
+                what_is: "hOLDer è una applicazione sviluppata in collaborazione con Epic Cube per il trattamento delle disabilità cognitive, specie negli anziani.\n\nL'applicazione contiene diversi minigiochi ideati assieme ad un team di psicologi per il trattamento di diversi tipi di abilità cognitive: dagli esercizi di memoria, allo spelling, al riconoscimento di pattern e di parole, esercizi di associazione e molto altro. Ho personalmento sviluppato diversi minigiochi di questo progetto, tutti soggetti ad un planning e storyboarding molto preciso e con comportamento atteso dell'applicazione (e.g. nessuna animazione delle scritte per non sviare pazienti affetti da ADHD, etc). Tra le features:\n• Supporto mobile (Android & iOS)\n• Diversi minigiochi, disponibili a rotazione o a seconda della licenza, per il trattamento di diversi tipi di abilità.\n• Sistema di gestione dell'amministratore (caretaker) e del paziente.\n• Sistema di gestione della difficoltà dell'esercizio basato sulle capacità reali del paziente\n• Disponibile su PlayStore ed Appstore",
+                what_demonstrates: "Dimostra che so lavorare per task efficientemente, rispettando restrizioni o limitazioni imposte dai requisiti.",
+                tags: ["Mobile", "Serious Game", "Sanità", "Accessibilità"],
+                media: [
+                    { type: 'image', src: '_assets/holder/1.png' },
+                    { type: 'image', src: '_assets/holder/2.png' },
+                    { type: 'image', src: '_assets/holder/3.png' },
+                    { type: 'image', src: '_assets/holder/4.png' }
+                ]
             },
             {
                 title: "EGP – Sicurezza in Cantiere",
@@ -168,11 +212,16 @@ function updateContent() {
                 mainDisplay.innerHTML = '';
                 if (item.type === 'video') {
                     let src = item.src.replace('youtube.com', 'youtube-nocookie.com');
-                    mainDisplay.innerHTML = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
-                    mainDisplay.onclick = null; // Remove click handler for video
+                    // Fix to ensure embed correct url format if just ID was passed or normal url
+                    if (src.indexOf('embed') === -1 && src.indexOf('youtu.be') !== -1) {
+                        // convert simple youtu.be/ID to embed
+                        const id = src.split('/').pop().split('?')[0];
+                        src = `https://www.youtube-nocookie.com/embed/\${id}`;
+                    }
+                    mainDisplay.innerHTML = `<iframe src="\${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+                    mainDisplay.onclick = null;
                 } else {
-                    mainDisplay.innerHTML = `<img src="${item.src}" alt="${project.title}">`;
-                    // Add click handler for lightbox
+                    mainDisplay.innerHTML = `<img src="\${item.src}" alt="\${project.title}">`;
                     mainDisplay.onclick = () => {
                         lightboxImg.src = item.src;
                         lightbox.classList.add('active');
@@ -193,19 +242,24 @@ function updateContent() {
                 if (index === 0) thumb.classList.add('active');
 
                 if (item.type === 'video') {
-                    // Extract video ID for thumbnail
-                    const videoId = item.src.split('/').pop().split('?')[0];
-                    thumb.innerHTML = `<img src="https://img.youtube.com/vi/${videoId}/default.jpg" alt="Video">`;
+                    // Robust ID extraction
+                    let videoId = '';
+                    if (item.src.includes('embed/')) {
+                        videoId = item.src.split('embed/')[1].split('?')[0];
+                    } else {
+                        videoId = item.src.split('/').pop().split('?')[0];
+                    }
+
+                    thumb.innerHTML = `<img src="https://img.youtube.com/vi/\${videoId}/default.jpg" alt="Video">`;
                     const playIcon = document.createElement('i');
                     playIcon.className = 'fas fa-play-circle';
                     thumb.appendChild(playIcon);
                 } else {
-                    thumb.innerHTML = `<img src="${item.src}" alt="Thumbnail">`;
+                    thumb.innerHTML = `<img src="\${item.src}" alt="Thumbnail">`;
                 }
 
                 thumb.addEventListener('click', () => {
                     updateMainDisplay(item);
-                    // Update active state
                     thumbnailsContainer.querySelectorAll('.gallery-thumbnail').forEach(t => t.classList.remove('active'));
                     thumb.classList.add('active');
                 });
@@ -216,7 +270,7 @@ function updateContent() {
             media.appendChild(mainDisplay);
             media.appendChild(thumbnailsContainer);
         } else {
-            media.innerHTML = '<i class="fas fa-image fa-3x"></i>'; // Placeholder icon
+            media.innerHTML = '<i class="fas fa-image fa-3x"></i>';
         }
 
         const info = document.createElement('div');
@@ -271,6 +325,39 @@ function updateContent() {
     document.getElementById('lang-it').classList.toggle('active', currentLang === 'it');
 }
 
+// Carousel Logic
+const placeholderImages = [
+    '_assets/metaverse/hub.png',
+    '_assets/metaverse/lab.png',
+    '_assets/metaverse/meetingrooms.png',
+    '_assets/photogallery/1.png',
+    '_assets/photogallery/2.png',
+    '_assets/photogallery/3.png',
+    '_assets/photogallery/4.png'
+];
+
+function initCarousel() {
+    const track = document.getElementById('carousel-track');
+    if (!track) return;
+
+    track.innerHTML = '';
+
+    // Duplicate images enough times to ensure smooth infinite scroll
+    const imagesToUse = [...placeholderImages, ...placeholderImages, ...placeholderImages];
+
+    imagesToUse.forEach(src => {
+        const item = document.createElement('div');
+        item.className = 'carousel-item';
+
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = "Project Example";
+
+        item.appendChild(img);
+        track.appendChild(item);
+    });
+}
+
 // Lightbox Logic
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
@@ -305,3 +392,4 @@ document.getElementById('lang-it').addEventListener('click', () => {
 
 // Initial render
 updateContent();
+initCarousel();
