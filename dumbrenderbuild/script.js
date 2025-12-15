@@ -8,7 +8,7 @@ const translations = {
         hero_desc: "7+ years experience across multiple sectors (amusement, industrial, research, educational, experiential).",
         hero_cta: "View Work",
         about_title: "About Me",
-        about_text: "Presents himself as proactive and passionate about videogames and interactive development.",
+        about_text: "I am a proactive generalist, specialized in Unity and Blender, but with knowledge of .NET, C++, and Unreal. I am passionate about videogames and interactive development.",
         projects_title: "Highlighted Projects",
         skills_title: "Skills",
         skill_unity: "Complex VR/AR development in Unity",
@@ -42,21 +42,21 @@ const translations = {
                 subtitle: "Multiplatform (WebGL, Windows, Meta Quest 3)",
                 what_is: "Fincons Art Exhibit is a multiplatform application developed for Fincons Group.\n\nIt was developed under tight time constraint for the company's photographic contest; part of the project time was budgeted toward the requirements gathering, and there in fast prototype iterations, driving towards the last release.\n\nIt features:\n• Multiplatform support (WebGL, Windows and Meta Quest 3)\n• Realistic lighting\n• High definition photos\n• Spatial and contextual audio",
                 what_demonstrates: "It demonstrates that I can work under pressure, delivering an MVP under tight deadlines, providing only the core functionalities required by the client while cutting off the fat.",
-                tags: ["WebGL", "VR", "Lighting", "Audio", "MVP"]
+                tags: ["WebGL", "VR", "Lighting", "Audio", "MVP"],
+                media: [
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/8kJB4s4xOj4' },
+                    { type: 'image', src: '_assets/photogallery/1.png' },
+                    { type: 'image', src: '_assets/photogallery/2.png' },
+                    { type: 'image', src: '_assets/photogallery/3.png' },
+                    { type: 'image', src: '_assets/photogallery/4.png' }
+                ]
             },
             {
                 title: "Castello Ursino AR",
                 subtitle: "AR gamified museum visit (PNRR funded)",
                 what_is: "This is a PNRR funded project developed in collaboration with Epic Cube for the Castello Ursino in Catania.\n\nCastello Ursino AR is meant to be an XR experience for visitors, helping users to better enjoy the museum exhibit through custom minigames for each of the most important paintings in the exhibition.\n\nI personally collaborated on the storyboard drafting, the ideation and implementation of the minigames, user UI realization starting from graphic artists' mockups, testing and bugfixing. Features include:\n• Mobile support (Android & iOS)\n• An AI assistant trained on data related to the museum's paintings, which can be asked for information in natural language about the history of the paintings, the museum and related contexts.\n• Several minigames using scans we made of the museum's paintings",
                 what_demonstrates: "It demonstrates that I can work in a multidisciplinary team, actively contributing to various aspects of the development cycle; from mockups to implementation, from storyboarding to prototyping, up to final approval by the client.",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
-                media: [
-                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/8kJB4s4xOj4' }, // Updated with ID from youtube_link.txt
-                    { type: 'image', src: '_assets/photogallery/1.png' },
-                    { type: 'image', src: '_assets/photogallery/2.png' },
-                    { type: 'image', src: '_assets/photogallery/3.png' },
-                    { type: 'image', src: '_assets/photogallery/4.png' }
-                ]
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
             },
             {
                 title: "hOLDer",
@@ -96,7 +96,7 @@ const translations = {
         hero_desc: "7+ anni di esperienza in diversi settori (amusement, industriale, ricerca, educativo, esperienziale).",
         hero_cta: "Vedi Lavori",
         about_title: "Chi Sono",
-        about_text: "Si presenta come proattivo e appassionato di videogiochi e sviluppo interattivo.",
+        about_text: "Sono un generalista proattivo, specializzato in Unity e Blender, ma con conoscenze di .NET, C++ e Unreal. Sono appassionato di videogiochi e sviluppo interattivo.",
         projects_title: "Progetti in Evidenza",
         skills_title: "Competenze",
         skill_unity: "Sviluppo VR/AR complesso in Unity",
@@ -130,14 +130,7 @@ const translations = {
                 subtitle: "Multipiattaforma (WebGL, Windows, Meta Quest 3)",
                 what_is: "Fincons Art Exhibit è un'applicazione multipiattaforma sviluppata per Fincons Group.\n\nÈ stata sviluppata con scadenze strette per il concorso fotografico dell'azienda; parte del tempo del progetto è stato dedicato alla raccolta dei requisiti, e poi in iterazioni veloci di prototipazione, guidando verso l'ultima release.\n\nInclude:\n• Supporto multipiattaforma (WebGL, Windows e Meta Quest 3)\n• Illuminazione realistica\n• Foto ad alta definizione\n• Audio spaziale e contestuale",
                 what_demonstrates: "Dimostra che posso lavorare sotto pressione, consegnando un MVP con scadenze strette, fornendo solo le funzionalità principali richieste dal cliente eliminando il superfluo.",
-                tags: ["WebGL", "VR", "Lighting", "Audio", "MVP"]
-            },
-            {
-                title: "Castello Ursino AR",
-                subtitle: "Visita museale gamificata in AR (finanziata PNRR)",
-                what_is: "Questo è un progetto sviluppato in collaborazione con Epic Cube per il Castello Ursino di Catania.\n\nCastello Ursino AR si propone d'essere una esperienza XR per i visitatori, aiutando gli utenti ad usufruire meglio della mostra museale tramite dei minigiochi personalizzati per ciascuno dei quadri più importanti della mostra.\n\nHo personalmente collaborato alla stesura dello storyboard, l'ideazione e l'implementazione dei minigiochi, realizzazione della UI utente a partire dai mockup degli artisti grafici, testing e bugfixing. Tra le feature:\n• Supporto mobile (Android & iOS)\n• Un assistente AI addestrato sui dati relativi ai quadri del museo, a cui è possibile chiedere informazioni in linguaggio naturale circa la storia dei quadri, del museo e dei relativi contesti.\n• Diversi minigiochi che utilizzano scansioni che abbiamo fatto ai quadri del museo",
-                what_demonstrates: "Dimostra che so lavorare in un team multidisciplinare, contribuendo attivamente a diversi aspetti del ciclo di sviluppo; dai mockup all'implementazione, dallo storyboarding alla prototipazione, fino all'approvazione finale da parte del cliente.",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
+                tags: ["WebGL", "VR", "Lighting", "Audio", "MVP"],
                 media: [
                     { type: 'video', src: 'https://www.youtube-nocookie.com/embed/8kJB4s4xOj4' },
                     { type: 'image', src: '_assets/photogallery/1.png' },
@@ -145,6 +138,13 @@ const translations = {
                     { type: 'image', src: '_assets/photogallery/3.png' },
                     { type: 'image', src: '_assets/photogallery/4.png' }
                 ]
+            },
+            {
+                title: "Castello Ursino AR",
+                subtitle: "Visita museale gamificata in AR (finanziata PNRR)",
+                what_is: "Questo è un progetto sviluppato in collaborazione con Epic Cube per il Castello Ursino di Catania.\n\nCastello Ursino AR si propone d'essere una esperienza XR per i visitatori, aiutando gli utenti ad usufruire meglio della mostra museale tramite dei minigiochi personalizzati per ciascuno dei quadri più importanti della mostra.\n\nHo personalmente collaborato alla stesura dello storyboard, l'ideazione e l'implementazione dei minigiochi, realizzazione della UI utente a partire dai mockup degli artisti grafici, testing e bugfixing. Tra le feature:\n• Supporto mobile (Android & iOS)\n• Un assistente AI addestrato sui dati relativi ai quadri del museo, a cui è possibile chiedere informazioni in linguaggio naturale circa la storia dei quadri, del museo e dei relativi contesti.\n• Diversi minigiochi che utilizzano scansioni che abbiamo fatto ai quadri del museo",
+                what_demonstrates: "Dimostra che so lavorare in un team multidisciplinare, contribuendo attivamente a diversi aspetti del ciclo di sviluppo; dai mockup all'implementazione, dallo storyboarding alla prototipazione, fino all'approvazione finale da parte del cliente.",
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
             },
             {
                 title: "hOLDer",
@@ -216,12 +216,12 @@ function updateContent() {
                     if (src.indexOf('embed') === -1 && src.indexOf('youtu.be') !== -1) {
                         // convert simple youtu.be/ID to embed
                         const id = src.split('/').pop().split('?')[0];
-                        src = `https://www.youtube-nocookie.com/embed/\${id}`;
+                        src = `https://www.youtube-nocookie.com/embed/${id}`;
                     }
-                    mainDisplay.innerHTML = `<iframe src="\${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+                    mainDisplay.innerHTML = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
                     mainDisplay.onclick = null;
                 } else {
-                    mainDisplay.innerHTML = `<img src="\${item.src}" alt="\${project.title}">`;
+                    mainDisplay.innerHTML = `<img src="${item.src}" alt="${project.title}">`;
                     mainDisplay.onclick = () => {
                         lightboxImg.src = item.src;
                         lightbox.classList.add('active');
@@ -250,12 +250,12 @@ function updateContent() {
                         videoId = item.src.split('/').pop().split('?')[0];
                     }
 
-                    thumb.innerHTML = `<img src="https://img.youtube.com/vi/\${videoId}/default.jpg" alt="Video">`;
+                    thumb.innerHTML = `<img src="https://img.youtube.com/vi/${videoId}/default.jpg" alt="Video">`;
                     const playIcon = document.createElement('i');
                     playIcon.className = 'fas fa-play-circle';
                     thumb.appendChild(playIcon);
                 } else {
-                    thumb.innerHTML = `<img src="\${item.src}" alt="Thumbnail">`;
+                    thumb.innerHTML = `<img src="${item.src}" alt="Thumbnail">`;
                 }
 
                 thumb.addEventListener('click', () => {
