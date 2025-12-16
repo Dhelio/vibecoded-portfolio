@@ -327,13 +327,19 @@ function updateContent() {
 
 // Carousel Logic
 const placeholderImages = [
-    '_assets/metaverse/hub.png',
-    '_assets/metaverse/lab.png',
-    '_assets/metaverse/meetingrooms.png',
-    '_assets/photogallery/1.png',
-    '_assets/photogallery/2.png',
-    '_assets/photogallery/3.png',
-    '_assets/photogallery/4.png'
+    '_assets/other/Stegip_1.gif',
+    '_assets/other/abb.gif',
+    '_assets/other/balloon.gif',
+    '_assets/other/cartuned.gif',
+    '_assets/other/coccode.gif',
+    '_assets/other/egp2.gif',
+    '_assets/other/egp_1.gif',
+    '_assets/other/frog.gif',
+    '_assets/other/goalgoal.gif',
+    '_assets/other/holder.gif',
+    '_assets/other/stegip_2.gif',
+    '_assets/other/visioplus.gif',
+    '_assets/other/ybqlauncher.gif'
 ];
 
 function initCarousel() {
