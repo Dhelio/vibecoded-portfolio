@@ -327,6 +327,12 @@ function updateContent() {
 
 // Carousel Logic
 const placeholderImages = [
+    '_assets/other/20180309_215128.jpg',
+    '_assets/other/20180309_215349.jpg',
+    '_assets/other/IMG-20180713-WA0024.jpg',
+    '_assets/other/IMG-20180927-WA0015.jpg',
+    '_assets/other/IMG-20190329-WA0009.jpg',
+    '_assets/other/IMG-20191104-WA0009.jpg',
     '_assets/other/Stegip_1.gif',
     '_assets/other/abb.gif',
     '_assets/other/balloon.gif',
@@ -338,6 +344,10 @@ const placeholderImages = [
     '_assets/other/goalgoal.gif',
     '_assets/other/holder.gif',
     '_assets/other/stegip_2.gif',
+    '_assets/other/unnamed1.gif',
+    '_assets/other/unnamed2.gif',
+    '_assets/other/unnamed3.gif',
+    '_assets/other/unnamed4.gif',
     '_assets/other/visioplus.gif',
     '_assets/other/ybqlauncher.gif'
 ];
