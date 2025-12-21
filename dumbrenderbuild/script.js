@@ -56,7 +56,21 @@ const translations = {
                 subtitle: "AR gamified museum visit (PNRR funded)",
                 what_is: "This is a PNRR funded project developed in collaboration with Epic Cube for the Castello Ursino in Catania.\n\nCastello Ursino AR is meant to be an XR experience for visitors, helping users to better enjoy the museum exhibit through custom minigames for each of the most important paintings in the exhibition.\n\nI personally collaborated on the storyboard drafting, the ideation and implementation of the minigames, user UI realization starting from graphic artists' mockups, testing and bugfixing. Features include:\n• Mobile support (Android & iOS)\n• An AI assistant trained on data related to the museum's paintings, which can be asked for information in natural language about the history of the paintings, the museum and related contexts.\n• Several minigames using scans we made of the museum's paintings",
                 what_demonstrates: "It demonstrates that I can work in a multidisciplinary team, actively contributing to various aspects of the development cycle; from mockups to implementation, from storyboarding to prototyping, up to final approval by the client.",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
+                media: [
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/-s3qxLawP7I' },
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/mUDbLLmqm5I' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002516.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002529.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002550.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002608.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002620.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002642.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002720.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002743.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002809.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/splash.jpg' }
+                ]
             },
             {
                 title: "hOLDer",
@@ -144,7 +158,21 @@ const translations = {
                 subtitle: "Visita museale gamificata in AR (finanziata PNRR)",
                 what_is: "Questo è un progetto sviluppato in collaborazione con Epic Cube per il Castello Ursino di Catania.\n\nCastello Ursino AR si propone d'essere una esperienza XR per i visitatori, aiutando gli utenti ad usufruire meglio della mostra museale tramite dei minigiochi personalizzati per ciascuno dei quadri più importanti della mostra.\n\nHo personalmente collaborato alla stesura dello storyboard, l'ideazione e l'implementazione dei minigiochi, realizzazione della UI utente a partire dai mockup degli artisti grafici, testing e bugfixing. Tra le feature:\n• Supporto mobile (Android & iOS)\n• Un assistente AI addestrato sui dati relativi ai quadri del museo, a cui è possibile chiedere informazioni in linguaggio naturale circa la storia dei quadri, del museo e dei relativi contesti.\n• Diversi minigiochi che utilizzano scansioni che abbiamo fatto ai quadri del museo",
                 what_demonstrates: "Dimostra che so lavorare in un team multidisciplinare, contribuendo attivamente a diversi aspetti del ciclo di sviluppo; dai mockup all'implementazione, dallo storyboarding alla prototipazione, fino all'approvazione finale da parte del cliente.",
-                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"]
+                tags: ["AR", "Mobile", "AI", "Gamification", "Teamwork"],
+                media: [
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/-s3qxLawP7I' },
+                    { type: 'video', src: 'https://www.youtube-nocookie.com/embed/mUDbLLmqm5I' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002516.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002529.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002550.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002608.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002620.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002642.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002720.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002743.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/Screenshot 2025-12-21 002809.png' },
+                    { type: 'image', src: '_assets/castello_ursino_ar/splash.jpg' }
+                ]
             },
             {
                 title: "hOLDer",
