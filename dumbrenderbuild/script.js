@@ -20,6 +20,8 @@ const translations = {
         lbl_what_demo: "What does this project demonstrate?",
         other_projects_title: "Other Projects",
         other_projects_desc: "I have worked on a lot of projects through the years: from games to VR simulations, from educational games to industrial applications. Here's a small sample of other things I've worked on.",
+        versatility_title: "Have you only worked with Unity?",
+        versatility_desc: "Actually no, I have worked with a variety of other fields and technologies; from Android Studio libraries to Arduino sketches, from papers published in scientific journals to gantt and man-day estimations, I have always tried to make my flexibility and dynamism my strong point.",
         projects: [
             {
                 title: "Fincons Metaverse",
@@ -122,6 +124,8 @@ const translations = {
         lbl_what_demo: "Cosa dimostra questo progetto?",
         other_projects_title: "Altri Progetti",
         other_projects_desc: "Ho lavorato su molti progetti nel corso degli anni: dai giochi alle simulazioni VR, dai giochi educativi alle applicazioni industriali. Ecco un piccolo esempio di altre cose su cui ho lavorato.",
+        versatility_title: "Hai lavorato solo con Unity?",
+        versatility_desc: "In realtà no, ho lavorato con una varietà di altri campi e di altre tecnologie; da librerie in Android Studio a sketch di Arduino, da paper pubblicati in riviste scientifiche a gantt e stime giorni-uomo, ho sempre cercato di fare della mia flessibilità e dinamicità il mio punto di forza.",
         projects: [
             {
                 title: "Fincons Metaverse",
@@ -380,14 +384,22 @@ const placeholderImages = [
     '_assets/other/ybqlauncher.gif'
 ];
 
-function initCarousel() {
-    const track = document.getElementById('carousel-track');
+const stuffImages = [
+    '_assets/stuff/Arduino_Car_Tuned.png',
+    '_assets/stuff/Paper.png',
+    '_assets/stuff/androidStudioLib.png',
+    '_assets/stuff/dotnetController.png',
+    '_assets/stuff/javaObjectDetector.png'
+];
+
+function initCarousel(trackId, images) {
+    const track = document.getElementById(trackId);
     if (!track) return;
 
     track.innerHTML = '';
 
     // Duplicate images enough times to ensure smooth infinite scroll
-    const imagesToUse = [...placeholderImages, ...placeholderImages, ...placeholderImages];
+    const imagesToUse = [...images, ...images, ...images];
 
     imagesToUse.forEach(src => {
         const item = document.createElement('div');
@@ -396,6 +408,12 @@ function initCarousel() {
         const img = document.createElement('img');
         img.src = src;
         img.alt = "Project Example";
+
+        // Add lightbox trigger
+        img.onclick = () => {
+            lightboxImg.src = src;
+            lightbox.classList.add('active');
+        };
 
         item.appendChild(img);
         track.appendChild(item);
@@ -436,4 +454,5 @@ document.getElementById('lang-it').addEventListener('click', () => {
 
 // Initial render
 updateContent();
-initCarousel();
+initCarousel('carousel-track', placeholderImages);
+initCarousel('stuff-carousel-track', stuffImages);
